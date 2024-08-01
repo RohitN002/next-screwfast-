@@ -17,7 +17,7 @@ const Services = () => {
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src="/path-to-your-image.jpg" alt="Guidance" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://screwfast.uk/_astro/features-image.BEGIe8fA_ZXyMRJ.webp"} alt="Guidance" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Delivering Expert Guidance</h2>
@@ -38,13 +38,13 @@ const Services = () => {
             </button>
           </div>
           <div>
-            <Image src="/path-to-your-image.jpg" alt="Design" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Design" width={600} height={400} className="rounded-lg" />
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src="/path-to-your-image.jpg" alt="Oversight" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Oversight" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Navigating Projects with Professional Oversight</h2>
@@ -62,13 +62,13 @@ const Services = () => {
             </p>
           </div>
           <div>
-            <Image src="/path-to-your-image.jpg" alt="Performance" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Performance" width={600} height={400} className="rounded-lg" />
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src="/path-to-your-image.jpg" alt="Strategies" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"} alt="Strategies" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Crafting Bespoke Strategies for Unique Challenges</h2>
