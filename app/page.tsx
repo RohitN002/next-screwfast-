@@ -1,113 +1,168 @@
-import Image from "next/image";
+"use client"
+import { Footer } from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import dynamic from 'next/dynamic';
+import { useEffect } from "react"; 
 
-export default function Home() {
+// const SmoothScroll = dynamic(() => import('smooth-scroll'), { ssr: false });
+export default function Home() { 
+  // useEffect(() => {
+  //   const scroll = new SmoothScroll('a[href*="#"]', {
+  //     speed: 800,
+  //     speedAsDuration: true
+  //   });
+  // }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="">
+      <Navbar />
+
+    <section className="bg-gray-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-4xl font-extrabold text-gray-900">
+              Equip Your Projects with ScrewFast
+            </h2>
+            <p className="mt-4 text-lg text-gray-500">
+              Top-quality hardware tools and expert construction services for every project need.
+            </p>
+            <div className="mt-8">
+              <button className="bg-orange-500 text-white px-6 py-3 rounded-md shadow-sm hover:bg-orange-600">
+                Start Exploring
+              </button>
+              <button className="ml-4 border border-gray-300 text-gray-900 px-6 py-3 rounded-md shadow-sm hover:bg-gray-100">
+                Contact Sales Team
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      {/* Features Section */}
+      <section className="bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900">
+                Meeting Industry Demands
+              </h3>
+              <p className="mt-4 text-gray-500">
+                At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we deliver the reliability you need.
+              </p>
+            </div>
+            <div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="h-6 w-6 text-orange-500">✔</span>
+                  <p className="ml-3 text-gray-500">Dedicated Teams</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 text-orange-500">✔</span>
+                  <p className="ml-3 text-gray-500">Comprehensive Documentation</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 text-orange-500">✔</span>
+                  <p className="ml-3 text-gray-500">Simplicity and Affordability</p>
+                </li>
+                <li className="flex items-start">
+                  <span className="h-6 w-6 text-orange-500">✔</span>
+                  <p className="ml-3 text-gray-500">User-Centric Design</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+{/* jcb conent */}
+<div className="flex m-5 p-5">
+  <div style={{borderRadius:"20px"}} className="my-5">
+<img src={"https://cdn.wallpapersafari.com/59/51/BiL6Qe.jpg"} alt="" className="my-3" />
+  </div>
+  <div className="m-3">
+    <h4>  Customize ScrewFast's offerings to perfectly suit your hardware and construction needs.</h4>
+    <div className="flex">
+  <div className="m-3">
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+
+<div>
+<h6>Cutting-Edge Tools</h6>
+<p>Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.</p>
+</div>
+
+<div>
+<h6>Intuitive Dashboards</h6>
+<p>Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.</p>
+</div>
+
+<div>
+<h6>Robust Features</h6>
+<p>Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.</p>
+    </div>
+</div>
+
+<div className="m-3">
+
+
+<div>
+<h6>Cutting-Edge Tools</h6>
+<p>Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.</p>
+</div>
+
+<div>
+<h6>Intuitive Dashboards</h6>
+<p>Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.</p>
+</div>
+
+<div>
+<h6>Robust Features</h6>
+<p>Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.</p>
+    </div>
+</div>
+ </div>
+  </div>
+</div>
+      {/* Pricing Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-extrabold text-gray-900">
+            Simple, Transparent Pricing
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+          <p className="mt-4 text-lg text-gray-500">
+            Exact efficiency and ScrewFast value-driven plans.
           </p>
-        </a>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-white shadow-md rounded-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900">Starter Kit</h3>
+              <p className="mt-2 text-gray-500">Best option for DIY projects.</p>
+              <p className="mt-6 text-2xl font-extrabold text-gray-900">$49.00 USD/monthly</p>
+              <p className="mt-2 text-gray-500">Includes basic tools & tutorials</p>
+              <button className="mt-8 w-full bg-orange-500 text-white px-6 py-3 rounded-md shadow-sm hover:bg-orange-600">
+                Get the Starter Kit
+              </button>
+            </div>
+            <div className="bg-orange-100 shadow-md rounded-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900">Professional Toolbox</h3>
+              <p className="mt-2 text-gray-500">Best for large-scale use.</p>
+              <p className="mt-6 text-2xl font-extrabold text-gray-900">$89.00 USD/monthly</p>
+              <p className="mt-2 text-gray-500">Premium tool selection & expert support</p>
+              <button className="mt-8 w-full bg-orange-500 text-white px-6 py-3 rounded-md shadow-sm hover:bg-orange-600">
+                Get the Professional Toolbox
+              </button>
+            </div> 
+            <div className="bg-white shadow-md rounded-lg p-8">
+              <h3 className="text-xl font-bold text-gray-900">Starter Kit</h3>
+              <p className="mt-2 text-gray-500">Best option for DIY projects.</p>
+              <p className="mt-6 text-2xl font-extrabold text-gray-900">$49.00 USD/monthly</p>
+              <p className="mt-2 text-gray-500">Includes basic tools & tutorials</p>
+              <button className="mt-8 w-full bg-orange-500 text-white px-6 py-3 rounded-md shadow-sm hover:bg-orange-600">
+                Get the Starter Kit
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* Footer */}
+   <Footer/>
     </main>
   );
 }

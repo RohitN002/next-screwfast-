@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import type { PluginAPI } from "tailwindcss/types/config";
 
 const config: Config = {
   content: [
@@ -15,6 +16,15 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function (api: PluginAPI) {
+      api.addUtilities({
+        '.scroll-smooth': {
+          scrollBehavior: 'smooth',
+        },
+      });
+    },
+  ],
 };
+
 export default config;
