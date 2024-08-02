@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from 'next/image';
 const Services = () => {
@@ -17,7 +18,7 @@ const Services = () => {
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src={"https://screwfast.uk/_astro/features-image.BEGIe8fA_ZXyMRJ.webp"} alt="Guidance" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.u3MbxZ8huHxvEMdFaorEAwHaE8?rs=1&pid=ImgDetMain"} alt="Guidance" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Delivering Expert Guidance</h2>
@@ -38,13 +39,13 @@ const Services = () => {
             </button>
           </div>
           <div>
-            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Design" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.u3MbxZ8huHxvEMdFaorEAwHaE8?rs=1&pid=ImgDetMain"}  alt="Design" width={600} height={400} className="rounded-lg" />
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Oversight" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.u3MbxZ8huHxvEMdFaorEAwHaE8?rs=1&pid=ImgDetMain"}  alt="Oversight" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Navigating Projects with Professional Oversight</h2>
@@ -62,13 +63,13 @@ const Services = () => {
             </p>
           </div>
           <div>
-            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"}  alt="Performance" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.u3MbxZ8huHxvEMdFaorEAwHaE8?rs=1&pid=ImgDetMain"}  alt="Performance" width={600} height={400} className="rounded-lg" />
           </div>
         </section>
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Image src={"https://screwfast.uk/_astro/before-after.BntBToq6_1pQiXH.avif"} alt="Strategies" width={600} height={400} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.u3MbxZ8huHxvEMdFaorEAwHaE8?rs=1&pid=ImgDetMain"} alt="Strategies" width={600} height={400} className="rounded-lg" />
           </div>
           <div>
             <h2 className="text-2xl font-bold">Crafting Bespoke Strategies for Unique Challenges</h2>
@@ -103,7 +104,7 @@ const Services = () => {
           </div>
         </section>
       </main>
-
+<Footer/>
       </div>
     );
   };

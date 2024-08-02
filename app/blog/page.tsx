@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 const Services = () => {
     const featuredProducts = [
@@ -95,7 +96,7 @@ const Services = () => {
         </div>
       </section>
 
-
+<Footer/>
       </div>
     );
   };

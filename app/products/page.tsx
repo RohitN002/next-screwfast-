@@ -1,6 +1,7 @@
 // pages/products.tsx
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import { Footer } from '@/components/Footer';
 export default function Products() {
   return (
     <div className="bg-gray-50">
@@ -31,23 +32,23 @@ export default function Products() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div className="bg-white shadow-lg rounded-lg p-6">
-            <Image src="/images/machine-screws.jpg" alt="Machine Screws" width={400} height={300} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.w6vNthBcf85lNYN9ciI14AHaE8?rs=1&pid=ImgDetMain"} alt="Machine Screws" width={400} height={300} className="rounded-lg" />
             <h2 className="text-xl font-bold text-gray-800 mt-4">Machine Screws</h2>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6">
-            <Image src="/images/assorted-screw-set.jpg" alt="Assorted Screw Set" width={400} height={300} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.w6vNthBcf85lNYN9ciI14AHaE8?rs=1&pid=ImgDetMain"} alt="Assorted Screw Set" width={400} height={300} className="rounded-lg" />
             <h2 className="text-xl font-bold text-gray-800 mt-4">Assorted Screw Set</h2>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6">
-            <Image src="/images/tap-bolts.jpg" alt="Tap Bolts and Nuts Set" width={400} height={300} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.w6vNthBcf85lNYN9ciI14AHaE8?rs=1&pid=ImgDetMain"} alt="Tap Bolts and Nuts Set" width={400} height={300} className="rounded-lg" />
             <h2 className="text-xl font-bold text-gray-800 mt-4">Tap Bolts and Nuts Set</h2>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6">
-            <Image src="/images/hex-bolts.jpg" alt="Hex Bolts" width={400} height={300} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.w6vNthBcf85lNYN9ciI14AHaE8?rs=1&pid=ImgDetMain"}  alt="Hex Bolts" width={400} height={300} className="rounded-lg" />
             <h2 className="text-xl font-bold text-gray-800 mt-4">Hex Bolts</h2>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-6">
-            <Image src="/images/nuts.jpg" alt="Nuts" width={400} height={300} className="rounded-lg" />
+            <Image src={"https://th.bing.com/th/id/OIP.w6vNthBcf85lNYN9ciI14AHaE8?rs=1&pid=ImgDetMain"} alt="Nuts" width={400} height={300} className="rounded-lg" />
             <h2 className="text-xl font-bold text-gray-800 mt-4">Nuts</h2>
           </div>
         </section>
@@ -92,19 +93,7 @@ export default function Products() {
         </section>
       </main>
 
-      <footer className="bg-gray-800 text-white py-8">
-        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center">
-          <div className="mb-4 lg:mb-0">
-            <p className="text-lg font-bold">ScrewFast</p>
-            <p className="text-gray-400">&copy; 2024 ScrewFast. Crafted by solsystemoAI.</p>
-          </div>
-          <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white">Facebook</a>
-            <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
-            <a href="#" className="text-gray-400 hover:text-white">Instagram</a>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import dynamic from 'next/dynamic';
@@ -17,7 +18,8 @@ export default function Home() {
       <Navbar />
 
     <section className="bg-gray-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-4xl font-extrabold text-gray-900">
               Equip Your Projects with ScrewFast
@@ -35,6 +37,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+abcd
+        </div>
+      </div>
+      
       </section>
 
       {/* Features Section */}
@@ -73,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 {/* jcb conent */}
-<div className="flex m-5 p-5">
+{/* <div className="flex m-5 p-5">
   <div style={{borderRadius:"20px"}} className="my-5">
 <img src={"https://cdn.wallpapersafari.com/59/51/BiL6Qe.jpg"} alt="" className="my-3" />
   </div>
@@ -119,7 +126,93 @@ export default function Home() {
 </div>
  </div>
   </div>
+</div> */}
+
+<section className="flex flex-col md:flex-row items-center justify-center p-8 bg-gray-100">
+      {/* Image Section */}
+      <div className="md:w-1/2 w-full">
+        <Image
+          src={"https://cdn.wallpapersafari.com/59/51/BiL6Qe.jpg"} // Replace with your image path
+          alt="ScrewFast Machine"
+          width={600} // Adjust width as needed
+          height={400} // Adjust height as needed
+          className="rounded-lg"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="md:w-1/2 w-full md:ml-8 mt-8 md:mt-0">
+        <h2 className="text-3xl font-bold mb-4">
+          Customize <span className="text-yellow-500">ScrewFast's</span> offerings to perfectly suit your hardware and construction needs.
+        </h2>
+<div className='flex'>
+<div className="space-y-4 m-3">
+          {/* Feature 1 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-orange-500 mr-2">⚙️</span> Cutting-Edge Tools
+            </h3>
+            <p className="text-gray-700">
+              Empower your projects with ScrewFast’s cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-blue-500 mr-2">📊</span> Intuitive Dashboards
+            </h3>
+            <p className="text-gray-700">
+              Navigate with ease using ScrewFast’s intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-green-500 mr-2">🔧</span> Robust Features
+            </h3>
+            <p className="text-gray-700">
+              Minimize complexity, maximize productivity. ScrewFast’s robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.
+            </p>
+          </div>
+        </div>
+
+        <div className="space-y-4 m-3">
+          {/* Feature 1 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-orange-500 mr-2">⚙️</span> Cutting-Edge Tools
+            </h3>
+            <p className="text-gray-700">
+              Empower your projects with ScrewFast’s cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.
+            </p>
+          </div>
+
+          {/* Feature 2 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-blue-500 mr-2">📊</span> Intuitive Dashboards
+            </h3>
+            <p className="text-gray-700">
+              Navigate with ease using ScrewFast’s intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.
+            </p>
+          </div>
+
+          {/* Feature 3 */}
+          <div className="bg-white shadow-md p-4 rounded-lg">
+            <h3 className="text-xl font-bold flex items-center">
+              <span className="text-green-500 mr-2">🔧</span> Robust Features
+            </h3>
+            <p className="text-gray-700">
+              Minimize complexity, maximize productivity. ScrewFast’s robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.
+            </p>
+          </div>
+        </div>
 </div>
+        
+      </div>
+    </section>
       {/* Pricing Section */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
